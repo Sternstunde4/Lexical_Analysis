@@ -1,0 +1,1087 @@
+tests/case_1.pcat
+ROW	COL	TYPE			TOKEN/MESSAGE
+1	1	reserved keyword	PROGRAM
+1	9	reserved keyword	IS
+2	5	reserved keyword	VAR
+2	9	identifier      	i
+2	10	delimiter       	,
+2	12	identifier      	j
+2	14	delimiter       	:
+2	16	identifier      	INTEGER
+2	24	operator        	:=
+2	27	integer         	1
+2	28	delimiter       	;
+3	5	reserved keyword	VAR
+3	9	identifier      	x
+3	11	delimiter       	:
+3	13	identifier      	REAL
+3	18	operator        	:=
+3	21	real            	2.0
+3	24	delimiter       	;
+4	5	reserved keyword	VAR
+4	9	identifier      	y
+4	11	delimiter       	:
+4	13	identifier      	REAL
+4	18	operator        	:=
+4	21	real            	3.0
+4	24	delimiter       	;
+5	1	reserved keyword	BEGIN
+6	5	reserved keyword	WRITE
+6	11	delimiter       	(
+6	12	string          	"i = "
+6	18	delimiter       	,
+6	20	identifier      	i
+6	21	delimiter       	,
+6	23	string          	", j = "
+6	31	delimiter       	,
+6	33	identifier      	j
+6	34	delimiter       	)
+6	35	delimiter       	;
+7	5	reserved keyword	WRITE
+7	11	delimiter       	(
+7	12	string          	"x = "
+7	18	delimiter       	,
+7	20	identifier      	x
+7	21	delimiter       	,
+7	23	string          	", y = "
+7	31	delimiter       	,
+7	33	identifier      	y
+7	34	delimiter       	)
+7	35	delimiter       	;
+8	1	reserved keyword	END
+8	4	delimiter       	;
+
+tests/case_2.pcat
+ROW	COL	TYPE			TOKEN/MESSAGE
+1	1	reserved keyword	PROGRAM
+1	9	reserved keyword	IS
+2	5	reserved keyword	VAR
+2	9	identifier      	A
+2	10	delimiter       	,
+2	12	identifier      	B
+2	14	delimiter       	:
+2	16	identifier      	REAL
+2	21	operator        	:=
+2	24	real            	0.0
+2	27	delimiter       	;
+3	5	identifier      	C
+3	7	delimiter       	:
+3	9	identifier      	REAL
+3	14	operator        	:=
+3	17	real            	0.0
+3	20	delimiter       	;
+4	1	reserved keyword	BEGIN
+5	5	reserved keyword	WRITE
+5	11	delimiter       	(
+5	12	string          	"ENTER TWO REALS:"
+5	30	delimiter       	)
+5	31	delimiter       	;
+6	5	reserved keyword	READ
+6	10	delimiter       	(
+6	11	identifier      	A
+6	12	delimiter       	,
+6	14	identifier      	B
+6	15	delimiter       	)
+6	16	delimiter       	;
+7	5	identifier      	C
+7	7	operator        	:=
+7	10	real            	8.0
+7	13	delimiter       	;
+8	5	reserved keyword	WRITE
+8	11	delimiter       	(
+8	12	string          	"A="
+8	16	delimiter       	,
+8	18	identifier      	A
+8	19	delimiter       	,
+8	21	string          	", B="
+8	27	delimiter       	,
+8	29	identifier      	B
+8	30	delimiter       	,
+8	32	string          	", C="
+8	38	delimiter       	,
+8	40	identifier      	C
+8	41	delimiter       	)
+8	42	delimiter       	;
+9	5	identifier      	C
+9	7	operator        	:=
+9	10	identifier      	A
+9	12	operator        	-
+9	14	delimiter       	(
+9	15	operator        	-
+9	16	identifier      	B
+9	17	delimiter       	)
+9	19	operator        	+
+9	21	identifier      	C
+9	22	delimiter       	;
+10	5	identifier      	C
+10	7	operator        	:=
+10	10	identifier      	C
+10	12	operator        	+
+10	14	identifier      	A
+10	16	operator        	*
+10	18	delimiter       	(
+10	19	integer         	3
+10	21	operator        	+
+10	23	integer         	5
+10	25	operator        	*
+10	27	integer         	2
+10	28	delimiter       	)
+10	29	delimiter       	;
+11	5	reserved keyword	WRITE
+11	11	delimiter       	(
+11	13	operator        	-
+11	14	identifier      	C
+11	16	operator        	/
+11	17	delimiter       	(
+11	18	identifier      	A
+11	20	operator        	+
+11	22	integer         	1
+11	23	delimiter       	)
+11	24	delimiter       	)
+11	25	delimiter       	;
+12	1	reserved keyword	END
+12	4	delimiter       	;
+
+tests/case_3.pcat
+ROW	COL	TYPE			TOKEN/MESSAGE
+1	1	reserved keyword	PROGRAM
+1	9	reserved keyword	IS
+2	5	reserved keyword	VAR
+2	9	identifier      	A
+2	10	delimiter       	,
+2	12	identifier      	B
+2	14	delimiter       	:
+2	16	identifier      	REAL
+2	21	operator        	:=
+2	24	real            	0.0
+2	27	delimiter       	;
+3	5	reserved keyword	VAR
+3	9	identifier      	I
+3	10	delimiter       	,
+3	12	identifier      	J
+3	14	delimiter       	:
+3	16	identifier      	INTEGER
+3	24	operator        	:=
+3	27	integer         	0
+3	28	delimiter       	;
+4	1	reserved keyword	BEGIN
+5	5	identifier      	A
+5	7	operator        	:=
+5	10	real            	5.0
+5	13	delimiter       	;
+6	5	identifier      	I
+6	7	operator        	:=
+6	10	operator        	-
+6	11	integer         	3
+6	12	delimiter       	;
+7	5	identifier      	J
+7	7	operator        	:=
+7	10	identifier      	I
+7	12	operator        	*
+7	14	integer         	10
+7	16	delimiter       	;
+8	5	identifier      	B
+8	7	operator        	:=
+8	10	identifier      	A
+8	12	operator        	+
+8	14	identifier      	I
+8	15	delimiter       	;
+9	5	identifier      	A
+9	7	operator        	:=
+9	10	identifier      	J
+9	12	operator        	/
+9	14	identifier      	B
+9	15	delimiter       	;
+10	5	identifier      	J
+10	7	operator        	:=
+10	10	identifier      	I
+10	12	operator        	-
+10	14	identifier      	J
+10	15	delimiter       	;
+11	5	identifier      	I
+11	7	operator        	:=
+11	10	identifier      	J
+11	12	operator        	/
+11	14	identifier      	I
+11	15	delimiter       	;
+12	5	identifier      	B
+12	7	operator        	:=
+12	10	identifier      	I
+12	12	operator        	-
+12	14	identifier      	B
+12	15	delimiter       	;
+13	5	reserved keyword	WRITE
+13	11	delimiter       	(
+13	13	string          	" A = "
+13	20	delimiter       	,
+13	22	operator        	-
+13	23	identifier      	A
+13	24	delimiter       	,
+13	26	string          	" | B = "
+13	35	delimiter       	,
+13	37	identifier      	B
+13	38	delimiter       	)
+13	39	delimiter       	;
+14	5	reserved keyword	WRITE
+14	11	delimiter       	(
+14	13	string          	""
+14	16	delimiter       	)
+14	17	delimiter       	;
+15	5	reserved keyword	WRITE
+15	11	delimiter       	(
+15	13	string          	" I = "
+15	20	delimiter       	,
+15	22	identifier      	I
+15	23	delimiter       	,
+15	25	string          	" |  J = "
+15	35	delimiter       	,
+15	37	identifier      	J
+15	39	delimiter       	)
+15	40	delimiter       	;
+17	1	reserved keyword	END
+17	4	delimiter       	;
+
+tests/case_4.pcat
+ROW	COL	TYPE			TOKEN/MESSAGE
+1	1	reserved keyword	PROGRAM
+1	9	reserved keyword	IS
+2	5	reserved keyword	VAR
+2	9	identifier      	I
+2	11	delimiter       	:
+2	13	identifier      	INTEGER
+2	21	operator        	:=
+2	24	integer         	0
+2	25	delimiter       	;
+3	5	reserved keyword	TYPE
+3	10	identifier      	COMPLEX
+3	18	reserved keyword	IS
+3	21	reserved keyword	RECORD
+3	28	identifier      	R
+3	29	delimiter       	:
+3	31	identifier      	REAL
+3	35	delimiter       	;
+3	37	identifier      	I
+3	39	delimiter       	:
+3	41	identifier      	REAL
+3	45	delimiter       	;
+3	47	reserved keyword	END
+3	50	delimiter       	;
+4	5	reserved keyword	TYPE
+4	10	identifier      	PAIR
+4	15	reserved keyword	IS
+4	18	reserved keyword	RECORD
+4	25	identifier      	FIRST
+4	30	delimiter       	:
+4	32	identifier      	COMPLEX
+4	39	delimiter       	;
+4	41	identifier      	SECOND
+4	48	delimiter       	:
+4	50	identifier      	COMPLEX
+4	57	delimiter       	;
+4	59	reserved keyword	END
+4	62	delimiter       	;
+5	5	reserved keyword	VAR
+5	9	identifier      	C
+5	11	delimiter       	:
+5	13	identifier      	COMPLEX
+5	21	operator        	:=
+5	24	identifier      	COMPLEX
+5	32	delimiter       	{
+5	34	identifier      	R
+5	36	operator        	:=
+5	39	real            	0.0
+5	42	delimiter       	;
+5	44	identifier      	I
+5	46	operator        	:=
+5	49	real            	0.0
+5	53	delimiter       	}
+5	54	delimiter       	;
+6	5	reserved keyword	VAR
+6	9	identifier      	P
+6	11	delimiter       	:
+6	13	identifier      	PAIR
+6	18	operator        	:=
+6	21	identifier      	PAIR
+6	26	delimiter       	{
+6	28	identifier      	FIRST
+6	34	operator        	:=
+6	37	identifier      	COMPLEX
+6	45	delimiter       	{
+6	47	identifier      	R
+6	49	operator        	:=
+6	52	real            	0.0
+6	55	delimiter       	;
+6	57	identifier      	I
+6	59	operator        	:=
+6	62	real            	0.0
+6	66	delimiter       	}
+6	67	delimiter       	;
+7	28	identifier      	SECOND
+7	35	operator        	:=
+7	38	identifier      	COMPLEX
+7	46	delimiter       	{
+7	48	identifier      	R
+7	50	operator        	:=
+7	53	real            	0.0
+7	56	delimiter       	;
+7	58	identifier      	I
+7	60	operator        	:=
+7	63	real            	0.0
+7	67	delimiter       	}
+7	69	delimiter       	}
+7	70	delimiter       	;
+8	5	reserved keyword	PROCEDURE
+8	15	identifier      	PRINT
+8	20	delimiter       	(
+8	21	delimiter       	)
+8	23	reserved keyword	IS
+8	26	reserved keyword	BEGIN
+9	5	reserved keyword	WRITE
+9	10	delimiter       	(
+9	11	string          	"    ("
+9	18	delimiter       	,
+9	20	identifier      	C
+9	21	delimiter       	.
+9	22	identifier      	R
+9	23	delimiter       	,
+9	25	string          	", "
+9	29	delimiter       	,
+9	31	identifier      	C
+9	32	delimiter       	.
+9	33	identifier      	I
+9	34	delimiter       	,
+9	36	string          	")"
+9	39	delimiter       	)
+9	40	delimiter       	;
+10	5	reserved keyword	END
+10	8	delimiter       	;
+11	1	reserved keyword	BEGIN
+12	5	identifier      	C
+12	6	delimiter       	.
+12	7	identifier      	R
+12	9	operator        	:=
+12	12	real            	1.0
+12	15	delimiter       	;
+13	5	identifier      	C
+13	6	delimiter       	.
+13	7	identifier      	I
+13	9	operator        	:=
+13	12	real            	0.0
+13	15	delimiter       	;
+14	5	identifier      	P
+14	6	delimiter       	.
+14	7	identifier      	FIRST
+14	13	operator        	:=
+14	16	identifier      	C
+14	17	delimiter       	;
+15	5	identifier      	C
+15	6	delimiter       	.
+15	7	identifier      	R
+15	9	operator        	:=
+15	12	real            	0.0
+15	15	delimiter       	;
+16	5	identifier      	C
+16	6	delimiter       	.
+16	7	identifier      	I
+16	9	operator        	:=
+16	12	real            	1.0
+16	15	delimiter       	;
+17	5	identifier      	P
+17	6	delimiter       	.
+17	7	identifier      	SECOND
+17	14	operator        	:=
+17	17	identifier      	C
+17	18	delimiter       	;
+18	5	identifier      	C
+18	7	operator        	:=
+18	10	identifier      	P
+18	11	delimiter       	.
+18	12	identifier      	FIRST
+18	17	delimiter       	;
+19	5	reserved keyword	WRITE
+19	11	delimiter       	(
+19	12	string          	"The first complex number should be (1.0, 0.0):"
+19	60	delimiter       	)
+19	61	delimiter       	;
+20	5	identifier      	PRINT
+20	10	delimiter       	(
+20	11	delimiter       	)
+20	12	delimiter       	;
+21	5	identifier      	C
+21	7	operator        	:=
+21	10	identifier      	P
+21	11	delimiter       	.
+21	12	identifier      	SECOND
+21	18	delimiter       	;
+22	5	reserved keyword	WRITE
+22	11	delimiter       	(
+22	12	string          	"The second complex number should be (0.0, 1.0):"
+22	61	delimiter       	)
+22	62	delimiter       	;
+23	5	identifier      	PRINT
+23	10	delimiter       	(
+23	11	delimiter       	)
+23	12	delimiter       	;
+24	5	reserved keyword	IF
+24	8	identifier      	P
+24	9	delimiter       	.
+24	10	identifier      	FIRST
+24	15	delimiter       	.
+24	16	identifier      	R
+24	18	operator        	<>
+24	21	identifier      	P
+24	22	delimiter       	.
+24	23	identifier      	SECOND
+24	29	delimiter       	.
+24	30	identifier      	R
+24	32	reserved keyword	THEN
+25	5	reserved keyword	WRITE
+25	11	delimiter       	(
+25	12	string          	"and these two complex numbers are not equal!"
+25	58	delimiter       	)
+25	59	delimiter       	;
+26	5	reserved keyword	ELSIF
+26	11	identifier      	P
+26	12	delimiter       	.
+26	13	identifier      	FIRST
+26	18	delimiter       	.
+26	19	identifier      	I
+26	21	operator        	<>
+26	24	identifier      	P
+26	25	delimiter       	.
+26	26	identifier      	SECOND
+26	32	delimiter       	.
+26	33	identifier      	I
+26	35	reserved keyword	THEN
+27	5	reserved keyword	WRITE
+27	11	delimiter       	(
+27	12	string          	"and these two complex numbers are not equal!"
+27	58	delimiter       	)
+27	59	delimiter       	;
+28	5	reserved keyword	ELSE
+29	5	reserved keyword	WRITE
+29	11	delimiter       	(
+29	12	string          	"and these two complex numbers are equal?"
+29	54	delimiter       	)
+29	55	delimiter       	;
+30	5	reserved keyword	END
+30	8	delimiter       	;
+31	1	reserved keyword	END
+31	4	delimiter       	;
+
+tests/case_5.pcat
+ROW	COL	TYPE			TOKEN/MESSAGE
+1	1	reserved keyword	PROGRAM
+1	9	reserved keyword	IS
+2	5	reserved keyword	VAR
+2	9	identifier      	I
+2	10	delimiter       	,
+2	11	identifier      	J
+2	13	delimiter       	:
+2	15	identifier      	INTEGER
+2	23	operator        	:=
+2	26	integer         	0
+2	27	delimiter       	;
+3	1	reserved keyword	BEGIN
+4	5	reserved keyword	WRITE
+4	10	delimiter       	(
+4	11	string          	"Ascending loop:"
+4	28	delimiter       	)
+4	29	delimiter       	;
+5	5	reserved keyword	FOR
+5	9	identifier      	I
+5	11	operator        	:=
+5	14	integer         	1
+5	16	reserved keyword	TO
+5	19	integer         	5
+5	21	reserved keyword	DO
+6	7	reserved keyword	WRITE
+6	12	delimiter       	(
+6	13	string          	"I = "
+6	19	delimiter       	,
+6	21	identifier      	I
+6	22	delimiter       	)
+6	23	delimiter       	;
+7	9	reserved keyword	END
+7	12	delimiter       	;
+8	5	reserved keyword	WRITE
+8	10	delimiter       	(
+8	11	string          	"Descending loop:"
+8	29	delimiter       	)
+8	30	delimiter       	;
+9	5	reserved keyword	FOR
+9	9	identifier      	I
+9	11	operator        	:=
+9	14	integer         	5
+9	16	reserved keyword	TO
+9	19	integer         	1
+9	21	reserved keyword	BY
+9	24	operator        	-
+9	25	integer         	1
+9	27	reserved keyword	DO
+10	7	reserved keyword	WRITE
+10	12	delimiter       	(
+10	13	string          	"I = "
+10	19	delimiter       	,
+10	21	identifier      	I
+10	22	delimiter       	)
+10	23	delimiter       	;
+11	9	reserved keyword	END
+11	12	delimiter       	;
+12	5	reserved keyword	WRITE
+12	10	delimiter       	(
+12	11	string          	"Double loop:"
+12	25	delimiter       	)
+12	26	delimiter       	;
+13	5	reserved keyword	FOR
+13	9	identifier      	I
+13	11	operator        	:=
+13	14	integer         	1
+13	16	reserved keyword	TO
+13	19	integer         	5
+13	21	reserved keyword	DO
+14	9	reserved keyword	FOR
+14	13	identifier      	J
+14	15	operator        	:=
+14	18	identifier      	I
+14	20	reserved keyword	TO
+14	23	identifier      	I
+14	24	operator        	+
+14	25	integer         	10
+14	28	reserved keyword	BY
+14	31	integer         	2
+14	33	reserved keyword	DO
+15	11	reserved keyword	WRITE
+15	16	delimiter       	(
+15	17	string          	"I,J = "
+15	25	delimiter       	,
+15	27	identifier      	I
+15	28	delimiter       	,
+15	30	string          	", "
+15	34	delimiter       	,
+15	36	identifier      	J
+15	37	delimiter       	)
+15	38	delimiter       	;
+16	11	reserved keyword	END
+16	14	delimiter       	;
+17	9	reserved keyword	END
+17	12	delimiter       	;
+18	1	reserved keyword	END
+18	4	delimiter       	;
+
+tests/case_6.pcat
+ROW	COL	TYPE			TOKEN/MESSAGE
+1	1	reserved keyword	PROGRAM
+1	9	reserved keyword	IS
+2	5	reserved keyword	PROCEDURE
+2	15	identifier      	FOO
+2	18	delimiter       	(
+2	19	identifier      	X
+2	20	delimiter       	:
+2	22	identifier      	INT
+2	25	delimiter       	;
+2	27	identifier      	Y
+2	28	delimiter       	:
+2	30	identifier      	REAL
+2	34	delimiter       	)
+2	35	delimiter       	:
+2	36	identifier      	REAL
+2	41	reserved keyword	IS
+3	7	reserved keyword	PROCEDURE
+3	17	identifier      	BAR
+3	20	delimiter       	(
+3	21	delimiter       	)
+3	23	reserved keyword	IS
+3	26	reserved keyword	BEGIN
+3	32	identifier      	Y
+3	34	operator        	:=
+3	37	identifier      	X
+3	39	operator        	+
+3	41	real            	1.0
+3	44	delimiter       	;
+3	46	reserved keyword	END
+3	49	delimiter       	;
+4	7	reserved keyword	BEGIN
+5	9	identifier      	BAR
+5	12	delimiter       	(
+5	13	delimiter       	)
+5	14	delimiter       	;
+6	5	reserved keyword	RETURN
+6	12	identifier      	Y
+6	13	delimiter       	;
+7	7	reserved keyword	END
+7	10	delimiter       	;
+8	5	reserved keyword	VAR
+8	9	identifier      	C
+8	11	delimiter       	:
+8	13	identifier      	REAL
+8	18	operator        	:=
+8	21	integer         	0
+8	22	delimiter       	;
+9	1	reserved keyword	BEGIN
+10	5	identifier      	C
+10	7	operator        	:=
+10	10	identifier      	FOO
+10	13	delimiter       	(
+10	14	integer         	3
+10	15	delimiter       	,
+10	17	real            	2.0
+10	20	delimiter       	)
+10	21	delimiter       	;
+11	5	reserved keyword	WRITE
+11	10	delimiter       	(
+11	11	string          	"C = "
+11	17	delimiter       	,
+11	19	identifier      	C
+11	20	delimiter       	,
+11	22	string          	" (should be 4.0)"
+11	40	delimiter       	)
+11	41	delimiter       	;
+12	1	reserved keyword	END
+12	4	delimiter       	;
+
+tests/case_7.pcat
+ROW	COL	TYPE			TOKEN/MESSAGE
+1	1	reserved keyword	PROGRAM
+1	9	reserved keyword	IS
+2	5	reserved keyword	VAR
+2	9	identifier      	I
+2	11	delimiter       	:
+2	13	identifier      	INTEGER
+2	21	operator        	:=
+2	24	integer         	0
+2	25	delimiter       	;
+3	5	reserved keyword	PROCEDURE
+3	15	identifier      	ADDONE
+3	21	delimiter       	(
+3	22	delimiter       	)
+3	24	reserved keyword	IS
+3	27	reserved keyword	BEGIN
+4	5	identifier      	I
+4	7	operator        	:=
+4	10	identifier      	I
+4	12	operator        	+
+4	14	integer         	1
+4	15	delimiter       	;
+5	5	reserved keyword	END
+5	8	delimiter       	;
+6	5	reserved keyword	PROCEDURE
+6	15	identifier      	PASSTHEBUCK
+6	26	delimiter       	(
+6	27	delimiter       	)
+6	29	reserved keyword	IS
+6	32	reserved keyword	BEGIN
+6	38	identifier      	ADDONE
+6	44	delimiter       	(
+6	45	delimiter       	)
+6	46	delimiter       	;
+6	48	reserved keyword	END
+6	51	delimiter       	;
+7	1	reserved keyword	BEGIN
+8	5	reserved keyword	WRITE
+8	10	delimiter       	(
+8	11	string          	"I = "
+8	17	delimiter       	,
+8	19	identifier      	I
+8	20	delimiter       	,
+8	22	string          	" (SHOULD BE 0)"
+8	38	delimiter       	)
+8	39	delimiter       	;
+9	5	identifier      	PASSTHEBUCK
+9	16	delimiter       	(
+9	17	delimiter       	)
+9	18	delimiter       	;
+10	5	reserved keyword	WRITE
+10	10	delimiter       	(
+10	11	string          	"I = "
+10	17	delimiter       	,
+10	19	identifier      	I
+10	20	delimiter       	,
+10	22	string          	" (SHOULD BE 1)"
+10	38	delimiter       	)
+10	39	delimiter       	;
+11	5	reserved keyword	WRITE
+11	10	delimiter       	(
+11	11	string          	"ALL DONE!"
+11	22	delimiter       	)
+11	23	delimiter       	;
+12	1	reserved keyword	END
+12	4	delimiter       	;
+
+tests/case_8.pcat
+ROW	COL	TYPE			TOKEN/MESSAGE
+1	1	reserved keyword	PROGRAM
+1	9	reserved keyword	IS
+2	5	reserved keyword	VAR
+2	9	identifier      	I
+2	11	delimiter       	:
+2	13	identifier      	INTEGER
+2	21	operator        	:=
+2	24	integer         	0
+2	25	delimiter       	;
+3	5	reserved keyword	PROCEDURE
+3	15	identifier      	ADDONE
+3	21	delimiter       	(
+3	22	delimiter       	)
+3	24	reserved keyword	IS
+4	5	reserved keyword	VAR
+4	9	identifier      	J
+4	11	delimiter       	:
+4	13	identifier      	INTEGER
+4	21	operator        	:=
+4	24	integer         	0
+4	25	delimiter       	;
+5	5	reserved keyword	PROCEDURE
+5	15	identifier      	OKAY
+5	19	delimiter       	(
+5	20	delimiter       	)
+5	22	reserved keyword	IS
+6	9	reserved keyword	VAR
+6	13	identifier      	CONSTANT
+6	22	delimiter       	:
+6	24	identifier      	INTEGER
+6	32	operator        	:=
+6	35	integer         	0
+6	36	delimiter       	;
+7	5	reserved keyword	BEGIN
+8	9	identifier      	CONSTANT
+8	18	operator        	:=
+8	21	integer         	1
+8	22	delimiter       	;
+9	9	identifier      	J
+9	11	operator        	:=
+9	14	identifier      	J
+9	16	operator        	+
+9	18	identifier      	CONSTANT
+9	26	delimiter       	;
+10	5	reserved keyword	END
+10	8	delimiter       	;
+11	5	reserved keyword	BEGIN
+12	5	identifier      	J
+12	7	operator        	:=
+12	10	identifier      	I
+12	11	delimiter       	;
+13	5	identifier      	OKAY
+13	9	delimiter       	(
+13	10	delimiter       	)
+13	11	delimiter       	;
+14	5	identifier      	I
+14	7	operator        	:=
+14	10	identifier      	J
+14	11	delimiter       	;
+15	5	reserved keyword	END
+15	8	delimiter       	;
+16	1	reserved keyword	BEGIN
+17	5	identifier      	I
+17	7	operator        	:=
+17	10	integer         	0
+17	11	delimiter       	;
+18	5	reserved keyword	WRITE
+18	10	delimiter       	(
+18	11	string          	"I = "
+18	17	delimiter       	,
+18	19	identifier      	I
+18	20	delimiter       	,
+18	22	string          	" (SHOULD BE 0)"
+18	38	delimiter       	)
+18	39	delimiter       	;
+19	5	identifier      	ADDONE
+19	11	delimiter       	(
+19	12	delimiter       	)
+19	13	delimiter       	;
+20	5	reserved keyword	WRITE
+20	10	delimiter       	(
+20	11	string          	"I = "
+20	17	delimiter       	,
+20	19	identifier      	I
+20	20	delimiter       	,
+20	22	string          	" (SHOULD BE 1)"
+20	38	delimiter       	)
+20	39	delimiter       	;
+21	5	identifier      	ADDONE
+21	11	delimiter       	(
+21	12	delimiter       	)
+21	13	delimiter       	;
+22	5	reserved keyword	WRITE
+22	10	delimiter       	(
+22	11	string          	"I = "
+22	17	delimiter       	,
+22	19	identifier      	I
+22	20	delimiter       	,
+22	22	string          	" (SHOULD BE 2)"
+22	38	delimiter       	)
+22	39	delimiter       	;
+23	5	reserved keyword	WRITE
+23	10	delimiter       	(
+23	11	string          	"ALL DONE!"
+23	22	delimiter       	)
+23	23	delimiter       	;
+24	1	reserved keyword	END
+24	4	delimiter       	;
+
+tests/case_9.pcat
+ROW	COL	TYPE			TOKEN/MESSAGE
+1	1	reserved keyword	PROGRAM
+1	9	reserved keyword	IS
+2	5	reserved keyword	VAR
+2	9	identifier      	I
+2	10	delimiter       	,
+2	12	identifier      	J
+2	13	delimiter       	,
+2	15	identifier      	ANSWER
+2	22	delimiter       	:
+2	24	identifier      	INTEGER
+2	32	operator        	:=
+2	35	integer         	0
+2	36	delimiter       	;
+3	5	reserved keyword	PROCEDURE
+3	15	identifier      	FACTORIAL
+3	24	delimiter       	(
+3	25	delimiter       	)
+3	27	reserved keyword	IS
+4	5	reserved keyword	PROCEDURE
+5	11	identifier      	FACT
+5	15	delimiter       	(
+5	16	delimiter       	)
+5	18	reserved keyword	IS
+5	21	reserved keyword	BEGIN
+6	9	identifier      	MULT
+6	13	delimiter       	(
+6	14	delimiter       	)
+6	15	delimiter       	;
+7	9	reserved keyword	IF
+7	12	identifier      	J
+7	14	operator        	<>
+7	17	identifier      	I
+7	19	reserved keyword	THEN
+7	24	identifier      	J
+7	26	operator        	:=
+7	29	identifier      	J
+7	31	operator        	+
+7	33	integer         	1
+7	34	delimiter       	;
+7	36	identifier      	FACT
+7	40	delimiter       	(
+7	41	delimiter       	)
+7	42	delimiter       	;
+7	44	reserved keyword	END
+7	47	delimiter       	;
+8	7	reserved keyword	END
+8	10	delimiter       	;
+9	7	identifier      	MULT
+9	11	delimiter       	(
+9	12	delimiter       	)
+9	14	reserved keyword	IS
+9	17	reserved keyword	BEGIN
+10	13	identifier      	ANSWER
+10	20	operator        	:=
+10	23	identifier      	ANSWER
+10	30	operator        	*
+10	32	identifier      	J
+10	33	delimiter       	;
+11	11	reserved keyword	END
+11	14	delimiter       	;
+12	5	reserved keyword	BEGIN
+13	5	identifier      	ANSWER
+13	12	operator        	:=
+13	15	integer         	1
+13	16	delimiter       	;
+14	5	identifier      	J
+14	7	operator        	:=
+14	10	integer         	1
+14	11	delimiter       	;
+15	5	identifier      	FACT
+15	9	delimiter       	(
+15	10	delimiter       	)
+15	11	delimiter       	;
+16	5	reserved keyword	END
+16	8	delimiter       	;
+17	1	reserved keyword	BEGIN
+18	5	reserved keyword	WRITE
+18	11	delimiter       	(
+18	12	string          	"The first 5 factorials are (in descending order):"
+18	63	delimiter       	)
+18	64	delimiter       	;
+19	5	identifier      	I
+19	7	operator        	:=
+19	10	integer         	5
+19	11	delimiter       	;
+20	5	reserved keyword	LOOP
+21	5	reserved keyword	IF
+21	8	identifier      	I
+21	10	operator        	<=
+21	13	integer         	0
+21	15	reserved keyword	THEN
+21	20	reserved keyword	EXIT
+21	24	delimiter       	;
+21	26	reserved keyword	END
+21	29	delimiter       	;
+22	9	identifier      	FACTORIAL
+22	18	delimiter       	(
+22	19	delimiter       	)
+22	20	delimiter       	;
+23	9	reserved keyword	WRITE
+23	14	delimiter       	(
+23	15	string          	"FACTORIAL("
+23	27	delimiter       	,
+23	29	identifier      	I
+23	30	delimiter       	,
+23	32	string          	") = "
+23	38	delimiter       	,
+23	40	identifier      	ANSWER
+23	46	delimiter       	)
+23	47	delimiter       	;
+24	5	identifier      	I
+24	7	operator        	:=
+24	10	identifier      	I
+24	12	operator        	-
+24	14	integer         	1
+24	15	delimiter       	;
+25	5	reserved keyword	END
+25	8	delimiter       	;
+26	1	reserved keyword	END
+26	4	delimiter       	;
+
+tests/case_10.pcat
+ROW	COL	TYPE			TOKEN/MESSAGE
+1	1	reserved keyword	PROGRAM
+1	9	reserved keyword	IS
+2	5	reserved keyword	VAR
+2	9	identifier      	I
+2	10	delimiter       	,
+2	12	identifier      	ANSWER
+2	19	delimiter       	:
+2	21	identifier      	INTEGER
+2	29	operator        	:=
+2	32	integer         	0
+2	33	delimiter       	;
+3	5	reserved keyword	PROCEDURE
+3	15	identifier      	FACTORIAL
+3	24	delimiter       	(
+3	25	delimiter       	)
+3	27	reserved keyword	IS
+4	5	reserved keyword	VAR
+4	9	identifier      	J
+4	11	delimiter       	:
+4	13	identifier      	INTEGER
+4	21	operator        	:=
+4	24	integer         	0
+4	25	delimiter       	;
+5	5	reserved keyword	PROCEDURE
+6	11	identifier      	FACT
+6	15	delimiter       	(
+6	16	delimiter       	)
+6	18	reserved keyword	IS
+6	21	reserved keyword	BEGIN
+7	9	reserved keyword	IF
+7	12	identifier      	J
+7	14	operator        	<=
+7	17	identifier      	I
+7	19	reserved keyword	THEN
+7	24	identifier      	MULT
+7	28	delimiter       	(
+7	29	delimiter       	)
+7	30	delimiter       	;
+7	32	identifier      	J
+7	34	operator        	:=
+7	37	identifier      	J
+7	39	operator        	+
+7	41	integer         	1
+7	42	delimiter       	;
+7	44	identifier      	FACT
+7	48	delimiter       	(
+7	49	delimiter       	)
+7	50	delimiter       	;
+7	52	reserved keyword	END
+7	55	delimiter       	;
+8	7	reserved keyword	END
+8	10	delimiter       	;
+9	7	identifier      	MULT
+9	11	delimiter       	(
+9	12	delimiter       	)
+9	14	reserved keyword	IS
+10	9	reserved keyword	VAR
+10	13	identifier      	I
+10	15	delimiter       	:
+10	17	identifier      	INTEGER
+10	25	operator        	:=
+10	28	integer         	0
+10	29	delimiter       	;
+11	7	reserved keyword	BEGIN
+12	9	identifier      	I
+12	11	operator        	:=
+12	14	identifier      	ANSWER
+12	20	delimiter       	;
+13	13	identifier      	I
+13	15	operator        	:=
+13	18	identifier      	I
+13	20	operator        	*
+13	22	identifier      	J
+13	23	delimiter       	;
+14	13	identifier      	ANSWER
+14	20	operator        	:=
+14	23	identifier      	I
+14	24	delimiter       	;
+15	7	reserved keyword	END
+15	10	delimiter       	;
+16	5	reserved keyword	BEGIN
+17	5	identifier      	ANSWER
+17	12	operator        	:=
+17	15	integer         	1
+17	16	delimiter       	;
+18	5	identifier      	J
+18	7	operator        	:=
+18	10	integer         	1
+18	11	delimiter       	;
+19	5	identifier      	FACT
+19	9	delimiter       	(
+19	10	delimiter       	)
+19	11	delimiter       	;
+20	5	reserved keyword	END
+20	8	delimiter       	;
+21	1	reserved keyword	BEGIN
+22	5	reserved keyword	WRITE
+22	11	delimiter       	(
+22	12	string          	"The first 5 factorials are (in ascending order):"
+22	62	delimiter       	)
+22	63	delimiter       	;
+23	5	identifier      	I
+23	7	operator        	:=
+23	10	integer         	1
+23	11	delimiter       	;
+24	5	reserved keyword	LOOP
+25	5	reserved keyword	IF
+25	8	identifier      	I
+25	10	delimiter       	>
+25	12	integer         	5
+25	14	reserved keyword	THEN
+25	19	reserved keyword	EXIT
+25	23	delimiter       	;
+25	25	reserved keyword	END
+25	28	delimiter       	;
+26	9	identifier      	FACTORIAL
+26	18	delimiter       	(
+26	19	delimiter       	)
+26	20	delimiter       	;
+27	9	reserved keyword	WRITE
+27	14	delimiter       	(
+27	15	string          	"FACTORIAL("
+27	27	delimiter       	,
+27	29	identifier      	I
+27	30	delimiter       	,
+27	32	string          	") = "
+27	38	delimiter       	,
+27	40	identifier      	ANSWER
+27	46	delimiter       	)
+27	47	delimiter       	;
+28	5	identifier      	I
+28	7	operator        	:=
+28	10	identifier      	I
+28	12	operator        	+
+28	14	integer         	1
+28	15	delimiter       	;
+29	5	reserved keyword	END
+29	8	delimiter       	;
+30	1	reserved keyword	END
+30	4	delimiter       	;
+

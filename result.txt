@@ -1,0 +1,10 @@
+tests/case_1.pcat	words:50	lines:8	
+tests/case_2.pcat	words:88	lines:12	
+tests/case_3.pcat	words:96	lines:18	
+tests/case_4.pcat	words:225	lines:31	
+tests/case_5.pcat	words:97	lines:18	
+tests/case_6.pcat	words:68	lines:12	
+tests/case_7.pcat	words:65	lines:13	
+tests/case_8.pcat	words:108	lines:27	
+tests/case_9.pcat	words:120	lines:26	
+tests/case_10.pcat	words:140	lines:30	
